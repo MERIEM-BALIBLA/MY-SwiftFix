@@ -1,12 +1,14 @@
 * {
+    padding: 0; 
     margin: 0px;
     box-sizing: border-box; /*siri fa7mi7*/
     font-family: poppins,sans-serif;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 .row {
-   background-color: #ffffff;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +36,7 @@
     display : flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     
 }
 
@@ -42,6 +44,7 @@
     display : flex;
     list-style: none;
     align-items: center;
+    color: #ffffff;
  }
 
  .menu ul > li {
@@ -67,7 +70,7 @@
     font-size: 69px;
     font-style: normal;
     font-weight: 700;
-    line-height: 120%; /* 82.8px */
+    line-height: 120%;
     letter-spacing: 1.38px;
  }
 
@@ -76,25 +79,25 @@
     font-family: Plus Jakarta Sans;
     font-size: 22px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 158%; /* 34.76px */
     letter-spacing: 0.5px;
     margin-bottom: 3rem;
  }
  
- .section button {
-    margin-bottom: 3rem;
-    width: 190px;
-    height: 80px;
-    border-radius: 8px;
-    background: #094B72;
-    color: var(--neutral-grey-1, #F9F8F9);
-    font-family: Plus Jakarta Sans;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 140.5%; /* 22.48px */
-    letter-spacing: 1.28px;
+ .section button,.complex-questions button {
+   width: 10em;
+   border-radius: 8px;
+   background: #094B72;
+   color: var(--neutral-grey-1, #F9F8F9);
+   font-family: Plus Jakarta Sans;
+   font-size: 1rem;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 140.5%; /* 22.48px */
+   letter-spacing: 1.28px;
+   margin-bottom: 7rem;
+   padding: 15px;
  }
 
 .section img {
@@ -104,7 +107,6 @@
 .image {
     position: relative;
  }
-
 
 .bloc {
     width: 382px;
@@ -132,14 +134,13 @@
     font-weight: 500;
     line-height: 36px; 
  }
- /* -----------------------section services---------------------------------------- */
+ /* -----------------------------------------------------section services---------------------------------------------- */
  .services {
-   padding: 20px;
+   padding: 3em;
    background-color: #F2F7FF;
    display: flex;
    flex-direction: row;
    justify-content: center;
-   gap : 60px;
 
  }
 
@@ -176,7 +177,7 @@
 
 .service-n {
    margin-top: 20px;
-   width: 555px;
+   width: 649px;
    height: 534px;
    display: flex;
    flex-wrap: wrap;
@@ -340,7 +341,6 @@
 }
 
  .vue1 {
-    
     width: 540px;
     height: 220px;
     text-align: center;
@@ -348,9 +348,12 @@
     background: #ffffff;
     box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
     padding : 10px;
-    padding-top : 60px;
-    
+    padding-top : 60px;  
  }
+
+/* .triangle {
+   clip-path: polygon(0 0, 100% 0, 50% 100%);
+} */
 
  .persone1 {
    display: inline-flex;
@@ -372,7 +375,7 @@
     text-align: center;
     border-radius: 10px;
     background: #ffffff;
-   box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+    box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
     padding : 10px;
     padding-top : 60px;
     
@@ -397,7 +400,7 @@
    font-size: 48px;
    font-style: normal;
    font-weight: 700;
-   line-height: 64px; /* 133.333% */
+   line-height: 64px;
    letter-spacing: 0.5px;
 
 }
@@ -415,25 +418,212 @@
    letter-spacing: 0.5px;
 }
 
-.complex-questions button {
-   width: 219px;
-   height: 64px;
-   margin-bottom: 20px;
-   background-color: #094B72;
-   color:#F9F8F9;
-   font-family: Poppins;
-   font-size: 22px;
-   font-style: normal;
-   font-weight: 600;
-   line-height: 36px; /* 163.636% */
-   letter-spacing: 0.5px;
+
+/* ------------------------------------------------- about us---------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------- article----------------------------------------------------------- */
+.about-us {
+   display : flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap : 7rem;
 }
- /* ---------------------------------------------------contact-------------------------------------------------------- */
+
+.contenu1 {
+   width: 30%;
+   margin-top: 43px;
+}
+
+.contenu1 h2 {
+   font-size: 70px;
+   color: #094B72;
+   font-family: Playfair Display;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 120%; /* 108px */
+   letter-spacing: 1.8px;
+   margin : 20px 0 20px 0;
+}
+
+.contenu1 p, .contenu2 p {
+   color: var(--neutral-grey-6, #4F4F4F);
+   font-family: Plus Jakarta Sans;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 158%;
+   letter-spacing: 0.5px;
+   margin-bottom: 40px;
+   margin-top: 44px;
+}
+
+.contenu2 button, .contenu1 button {
+   border-radius: 8px;
+   background: #094B72;
+   color: var(--neutral-grey-1, #F9F8F9);
+   font-family: Plus Jakarta Sans;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 140.5%; /* 22.48px */
+   letter-spacing: 1.28px;
+   margin-bottom: 7rem;
+   padding: 15px;
+}
+
+.technicien {
+   width : 30%;
+   height: 30rem;
+   margin-left: 10px;
+   border-radius: 34px;
+   
+}
+/* ---------------------------------------------- section d'historique ------------------------------------------------- */
+button {
+   cursor: pointer;
+}
+
+.history {
+   background-color: #F2F7FF;
+   padding-bottom: 20px;
+   display: flex;
+   flex-direction: row;
+   justify-content: start;
+}
+
+.contenu2 {
+   width: 40%;
+   margin-top: 43px;
+   margin-left: 19rem;
+  
+}
+
+.pic-his {
+   margin-left: 13rem;
+    margin-top: 55px;
+    width: 68%;
+}
+
+.contenu2 h3 {
+   color: #094B72;
+   font-family: Playfair Display;
+   font-size: 68px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 120%; /* 108px */
+   letter-spacing: 1.8px;
+   margin : 20px 0 20px 0;
+}
+
+.contenu2 span {
+   color : #094B72;
+}
+
+/* ---------------------------------------------------comment---------------------------------------------------------- */
+.client-comments {
+   margin: 3rem 0 3rem 0;
+   display: flex;
+   flex-direction: row;
+   gap : 50px;
+   justify-content: center;
+}
+
+.comments {
+   background-color: #ffffff;
+   box-shadow: 0px 10px 20px rgba(41, 41, 42, 7);
+   width: 20%;
+   height: 20em;
+   font-size: 25px;
+}
+
+.person {
+   padding: 2rem 2rem 0rem 2rem;
+}
+
+.person h4 {
+   margin-bottom: 10px;
+   font-family: Poppins;
+   font-size: 25px;
+   font-style: normal;
+}
+
+.person p {
+   font-family: Poppins;
+   font-size: 20px;
+   font-style: normal;
+}
+
+.comment {
+   width: 2em;
+   height: 2em;
+   display: flex;
+   margin: 1em 0em 0em 12em;
+}
+
+.personnage {
+   width: 5em;
+   height: 4em;
+}
+
+.etoiles {
+   width : 2em;
+   height: 2em;
+}
+/* ---------------------------------------------------services----------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------- */
+.services-page {
+   margin: 4em 0 6em 22em;
+   width: 70%;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2em;
+}
+
+.maintenance-services {
+   padding: 1em;
+   background-color:  #DCD0FF;
+   /* border: solid 1px; */
+   box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.1);
+   width: 25%;
+   height: 17em;
+   text-align: center;
+}
+
+.icon {
+   width: 5em;
+   height: 4em;
+   margin-bottom: 15px;
+}
+
+.maintenance-services h4 {
+   margin-bottom: 10px;
+   font-family: Poppins,sans-serif;
+   font-size: 25px;
+   font-style: normal;
+   font-size: 20px;
+   margin-bottom: 15px;
+   
+}
+/* ---------------------------------------------------contact-------------------------------------------------------- */
  /* ------------------------------------------------------------------------------------------------------------------ */
-  .contact {
+ .contact {
    background-color: #F2F7FF;
    padding: 4rem 0 4rem 20rem;
+   display: flex;
+   flex-direction: row;
+   gap : 7em;
 
+}
+
+.form h3 {
+   color: #094B72;
+   font-family: 'Merriweather Sans', sans-serif;
+   font-size: 45px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 120%; /* 108px */
+   letter-spacing: 1.8px;
 }
 
 .info {
@@ -441,9 +631,28 @@
    flex-direction: column;
 }
 
-.info input, .info select {
+.info input {
    width: 50em;
-   height: 5em;
+   height: 3em;
+   margin-top: 20px;
+   padding: 7px;
+   border: 2px solid #094B72;
+   background: #FFF;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.info select {
+   margin-top: 20px;
+   padding: 7px;
+   border: 2px solid #094B72;
+   background: #FFF;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   color: #87898C;
+}
+
+.info textarea {
+   width: 50em;
+   height: 8em;
    margin-top: 20px;
    padding: 7px;
    border: 2px solid #094B72;
@@ -452,18 +661,26 @@
 }
 
 .info button {
-   margin :3rem 0 3rem 0;
-    width: 190px;
-    height: 80px;
-    border-radius: 8px;
-    background: #094B72;
-    color: var(--neutral-grey-1, #F9F8F9);
-    font-family: Plus Jakarta Sans;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 140.5%; /* 22.48px */
-    letter-spacing: 1.28px;
+   width: 10em;
+   border-radius: 8px;
+   background: #094B72;
+   color: var(--neutral-grey-1, #F9F8F9);
+   font-family: Plus Jakarta Sans;
+   font-size: 1rem;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 140.5%; /* 22.48px */
+   letter-spacing: 1.28px;
+   margin-bottom: 7rem;
+   padding: 15px;
+   margin : 1em 0 2em 0;
+}
+
+.MAP {
+   margin: 5em 0 0 0;
+   border-radius: 10px;
+   box-shadow: 0px 10px 20px rgba(41, 41, 42, 7);
+   
 }
 /* ---------------------------------------------------footer----------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------------------------------- */
@@ -491,6 +708,7 @@
    align-items: center;
 }
 
+
 .pf2 {
    display : flex;
    flex : arrow;
@@ -502,7 +720,7 @@
    
 }
 
-.pf2 h4 {
+.list h4 {
    font-family: 'Inter', sans-serif;
    font-weight: 500;
    font-size: 20px;
@@ -510,20 +728,17 @@
 }
 
 
-.pf2 li {
+.list li, .list a {
+   color: white;
    list-style: none;
    font-family: 'Inter', sans-serif;
    font-weight: 200;
    font-style: normal;
-font-size: 16px;
-font-style: normal;
-padding-bottom: 20px;
-
+   font-size: 16px;
+   font-style: normal;
+   padding-bottom: 20px;
 }
 
-.features {
-   margin-left: 38px;
-}
 
 
 .feet2{
@@ -533,6 +748,7 @@ padding-bottom: 20px;
    align-items: center;
    gap : 57rem;
    padding: 0 0 3rem 19rem;
+   color : #ffffff;
 }
 
 .logo2 {
