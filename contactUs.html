@@ -15,10 +15,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="row">
+        <div class="header">
             <div class="logo">
                 <img src="images/logo.svg" alt="" srcset="">
                 <p>SwiftFix</p>
@@ -26,14 +30,14 @@
             <div class="navigation">
                 <div class="menu">
                     <ul>
-                        <li><a href="monSiteWeb.html">HOME</a></li>
-                        <li><a href="aboutUs.html">ABOUT US</a></li>
-                        <li><a href="srvices.html">SERVICES</a></li>
-                        <li><a href="contactUs.html">CONTACT US</a></li>   
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
                     </ul>
                 </div>
                 <div>
-                    <img src="images/Group 27.svg" alt="" srcset="">
+                    <img src="images/Group 27.svg" alt="recherche">
                 </div>
             </div>
         </div>
@@ -41,12 +45,12 @@
     
     <section class="contact">
         <div class="form">
-            <h3>CONTACT US</h3>
+            <h3>For more information contact us</h3>
             <form class="info">
                 <input type="text" placeholder="Name">
                 <input type="text" placeholder="Email">
                 <input type="text" placeholder="Phone Number">
-                <select>
+                <select aria-label="State">
                     <option disabled="disabled" selected="Country">Country</option>
                     <option >Morocco</option>
                     <option >Egypt</option>
@@ -54,7 +58,7 @@
                     <option >Tunis</option>
                 </select>
                 <input type="text" placeholder="Address">
-                <select>
+                <select aria-label="State">
                     <option disabled="disabled" selected="issues">Issues</option>
                     <option>Unexpected Breakdown</option>
                     <option>Downtime</option>
@@ -70,8 +74,16 @@
         </div>
         <div>
             <div class="MAP">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6563.952802744115!2d-8.528928881840777!3d32.24914254540518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sma!4v1697184845667!5m2!1sfr!2sma" width="650" height="450" style="border:0;" allowfullscreen="#" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6563.952802744115!2d-8.528928881840777!3d32.24914254540518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sma!4v1697184845667!5m2!1sfr!2sma" width="500" height="300" style="border:0;" allowfullscreen="#" loading="lazy" referrerpolicy="no-referrer-when-downgrade"title="myFrame"></iframe>
+            </div>
+            <div class="tele">
+                <img src="images/telephone-number-svgrepo-com.svg" alt="tele">
+                <p> Call : +212 6 66 66 66 66</p>
+            </div>
+            <div class="email">
+                <img src="images/email-svgrepo-com.svg" alt="email">
+                <p> Email : support@swiftfix.ma</p>
+            </div>
         </div>
     </section>
 </body>
